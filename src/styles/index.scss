@@ -1,0 +1,294 @@
+$siteText: #4a6a94;
+$siteTextLIGHT: #95adce;
+
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+/** BEGINNING OF THE HEADER ******************************/
+header {
+    box-shadow: 0px 0px 5px 0px #b4b4b4;
+    width: auto;
+    color: $siteText;
+}
+#header-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/** MOBILE HEADER VERSION **********/
+#mobile-header-area {
+    display: none;
+}
+/***************************************/
+#company-logo {
+    width: 120px;
+    padding-top: 15px;
+    text-align: center;
+    img {
+        width: 100%;
+    }
+    span {
+        font-family: sans-serif;
+        font-size: 20px;
+        font-weight: 800;
+        color: $siteText;
+    }
+}
+#hamburger-dropdown-icon {
+    display: none;
+
+    i {
+        font-size: 50px;
+    }
+}
+@media only screen and (min-width: 837px), (max-width: 985px) {
+    #header-container {
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 834px) {
+    #mobile-header-area {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        img {
+            width: 150px;
+        }
+    }
+    #header-container {
+        #company-logo {
+            display: none;
+        }
+    }
+    #hamburger-dropdown-icon {
+        display: block;
+        
+        i {
+            width: 200px;
+        }
+    }
+    #main-navigation {
+        display: none;
+    }
+}
+/** END LOGO AREA (PART OF HEADER) **************/
+#main-navigation {
+    padding-top: 25px;
+    ul {
+        li {
+            list-style-type: none;
+            display: inline-block;
+            padding: 20px;
+            &:hover {
+                cursor: pointer;
+            }
+            a {
+                text-decoration: none;
+                color: $siteText;
+            }
+        }
+    }
+}
+#dropdown-menu-area {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border: 1px solid #e9e9e9;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    display: none;
+
+    li {
+        list-style-type: none;
+
+        a {
+            text-decoration: none;
+            color: $siteText;
+            transition: .3s ease;
+            &:hover {
+                color: black;
+            }
+        }
+    }
+}
+/** END OF THE HEADER SECTION ****************************************/
+#contents {
+    width: auto;
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+/** FOR MOBILE **********************/
+#banner-area {
+    display: none;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background: #fcf9f5;
+    img {
+        width: 100%;
+    }
+    span {
+        font-family: sans-serif;
+        font-size: 50px;
+        font-weight: 800;
+        color: $siteText;
+    }
+}
+/******* END OF MOBILE BANNER *****************/
+#carousel-area {
+    width: 800px;
+    margin: auto;
+    img {
+        border-radius: 10px;
+        height: 500px;
+    }
+    .carousel-caption {
+        font-size: 30px;
+        font-weight: 800;
+        text-shadow: 5px 3px 5px black;
+    }
+}
+@media only screen and (max-width: 770px) {
+    #carousel-area {
+        width: auto;
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 680px) {
+    #company-logo {
+        display: none;
+    }
+    #carousel-area {
+        display: none;
+    }
+    #banner-area {
+        display: block;
+    }
+}
+
+h1 {
+    text-align: center;
+    padding-top: 10px;
+    font-family: "Lobster", cursive, sans-serif;
+    color: $siteText;
+}
+#featured-dishes-area {
+    width: 85%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 3px dashed $siteTextLIGHT;
+
+    .card {
+        margin-right: 20px;
+    }
+    h5 {
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+    p {
+        color: #292929;
+        font-weight: 400;
+    }
+    .btn {
+        background: $siteText;
+        border: none;
+        transition: .2s ease-in;
+        &:hover {
+            background: #ac7103;
+            cursor: pointer;
+        }
+    }
+}
+
+#specials-area {
+    width: 85%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+
+    .card {
+        margin-right: 20px;
+    }
+    h5 {
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+    p {
+        color: #292929;
+        font-weight: 400;
+    }
+    .btn {
+        background: $siteText;
+        border: none;
+        transition: .2s ease-in;
+        &:hover {
+            background: #ac7103;
+            cursor: pointer;
+        }
+    }
+}
+
+
+#share-area {
+    width: 30%;
+    margin: auto;
+    padding: 0 0 15px 0;
+}
+#shareLinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+
+    i {
+        font-size: 100px;
+    }
+}
+
+#footer {
+    background: $siteText;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: white;
+
+   .footer-contents {
+       
+        h6 {
+            font-size: 25px;
+            font-weight: bold;
+            font-family: "Lobster", cursive, sans-serif;
+        }
+        ul {
+            padding: 0;
+            li {
+                list-style-type: none;
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+
+    }
+}

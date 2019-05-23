@@ -1,0 +1,233 @@
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0 auto; }
+
+/** BEGINNING OF THE HEADER ******************************/
+header {
+  box-shadow: 0px 0px 5px 0px #b4b4b4;
+  width: auto;
+  color: #4a6a94; }
+
+#header-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+/** MOBILE HEADER VERSION **********/
+#mobile-header-area {
+  display: none; }
+
+/***************************************/
+#company-logo {
+  width: 120px;
+  padding-top: 15px;
+  text-align: center; }
+  #company-logo img {
+    width: 100%; }
+  #company-logo span {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: #4a6a94; }
+
+#hamburger-dropdown-icon {
+  display: none; }
+  #hamburger-dropdown-icon i {
+    font-size: 50px; }
+
+@media only screen and (min-width: 837px), (max-width: 985px) {
+  #header-container {
+    justify-content: center; } }
+@media only screen and (max-width: 834px) {
+  #mobile-header-area {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    flex-direction: column; }
+    #mobile-header-area img {
+      width: 150px; }
+
+  #header-container #company-logo {
+    display: none; }
+
+  #hamburger-dropdown-icon {
+    display: block; }
+    #hamburger-dropdown-icon i {
+      width: 200px; }
+
+  #main-navigation {
+    display: none; } }
+/** END LOGO AREA (PART OF HEADER) **************/
+#main-navigation {
+  padding-top: 25px; }
+  #main-navigation ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px; }
+    #main-navigation ul li:hover {
+      cursor: pointer; }
+    #main-navigation ul li a {
+      text-decoration: none;
+      color: #4a6a94; }
+
+#dropdown-menu-area {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border: 1px solid #e9e9e9;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  display: none; }
+  #dropdown-menu-area li {
+    list-style-type: none; }
+    #dropdown-menu-area li a {
+      text-decoration: none;
+      color: #4a6a94;
+      transition: .3s ease; }
+      #dropdown-menu-area li a:hover {
+        color: black; }
+
+/** END OF THE HEADER SECTION ****************************************/
+#contents {
+  width: auto;
+  margin: 20px 0 0 0;
+  padding: 0; }
+
+/** FOR MOBILE **********************/
+#banner-area {
+  display: none;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  background: #fcf9f5; }
+  #banner-area img {
+    width: 100%; }
+  #banner-area span {
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    color: #4a6a94; }
+
+/******* END OF MOBILE BANNER *****************/
+#carousel-area {
+  width: 800px;
+  margin: auto; }
+  #carousel-area img {
+    border-radius: 10px;
+    height: 500px; }
+  #carousel-area .carousel-caption {
+    font-size: 30px;
+    font-weight: 800;
+    text-shadow: 5px 3px 5px black; }
+
+@media only screen and (max-width: 770px) {
+  #carousel-area {
+    width: auto;
+    margin: auto; } }
+@media only screen and (max-width: 680px) {
+  #company-logo {
+    display: none; }
+
+  #carousel-area {
+    display: none; }
+
+  #banner-area {
+    display: block; } }
+h1 {
+  text-align: center;
+  padding-top: 10px;
+  font-family: "Lobster", cursive, sans-serif;
+  color: #4a6a94; }
+
+#featured-dishes-area {
+  width: 85%;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 3px dashed #95adce; }
+  #featured-dishes-area .card {
+    margin-right: 20px; }
+  #featured-dishes-area h5 {
+    font-weight: 700;
+    font-size: 1.5rem; }
+  #featured-dishes-area p {
+    color: #292929;
+    font-weight: 400; }
+  #featured-dishes-area .btn {
+    background: #4a6a94;
+    border: none;
+    transition: .2s ease-in; }
+    #featured-dishes-area .btn:hover {
+      background: #ac7103;
+      cursor: pointer; }
+
+#specials-area {
+  width: 85%;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center; }
+  #specials-area .card {
+    margin-right: 20px; }
+  #specials-area h5 {
+    font-weight: 700;
+    font-size: 1.5rem; }
+  #specials-area p {
+    color: #292929;
+    font-weight: 400; }
+  #specials-area .btn {
+    background: #4a6a94;
+    border: none;
+    transition: .2s ease-in; }
+    #specials-area .btn:hover {
+      background: #ac7103;
+      cursor: pointer; }
+
+#share-area {
+  width: 30%;
+  margin: auto;
+  padding: 0 0 15px 0; }
+
+#shareLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around; }
+  #shareLinks i {
+    font-size: 100px; }
+
+#footer {
+  background: #4a6a94;
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: white; }
+  #footer .footer-contents h6 {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Lobster", cursive, sans-serif; }
+  #footer .footer-contents ul {
+    padding: 0; }
+    #footer .footer-contents ul li {
+      list-style-type: none; }
+      #footer .footer-contents ul li a {
+        color: white;
+        text-decoration: none; }
+
+/*# sourceMappingURL=index.css.map */
